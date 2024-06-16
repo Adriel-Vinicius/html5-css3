@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+/*----------------------------------------------------------*/
+ 
+/*PALETA DE CORES
+
+#DB400 LARANJA ESCURO
+#FE6A2D LARANJA CLARO
+#8d3601 LARANJA SOMBRA
+
+.. abre a pasta anterior entra em outras  exp(../fonts/sansserif)
+*/
+
+/*----------------------------------------------------------*/
+
+:root { /*psudo classe raiz do documento*/
+
+    --cor1: rgb(255, 255, 255);
+    --cor2: #DB5400;
+    --cor3: #FE6A2D;
+    --cor4: #8d3601;
+
+    --font-padrao: arial, Helvetica, sans-serif;
+    --font-destaque: #;
+}
+
+
+
+.bottonitens {
+
+  background-color: var(--cor2);
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 40px;
+}
+
+
+ /*===========================DESENHANDO BOTAO NOSSA "HOSTORIA"========================*/
+
+ .externo {
+  background-image: url(imagem/setel.png);
+  width: 100%;
+  height: 500px;
+  border-radius: 35px;
+  margin: auto;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.interno {
+  font-size: 21px;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  background-color: #FE6A2D;
+  border-radius: 35px;
+  display: flex;
+  align-items: flex-end; 
+}
+
+.d1 {
+  color: #ffffff;
+  margin: 0px 0px 40px 0px;
+  border: solid #ffffff;
+  border-width: 0px 2px 0px 0px;
+  border-top: #FE6A2D;
+  border-left: #FE6A2D;
+  border-bottom: #FE6A2D;
+  padding: 100px 80px 0px 50px; 
+}
+
+.d2 {
+  color: #ffffff;
+  margin: 0px 110px 40px 110px;
+  padding: 0px 0px 0px 0px;
+}
+
+.d3 {
+  color: #ffffff;
+  margin: 0px 0px 40px 0px;
+  border: solid #ffffff;
+  border-width: 0px 0px 0px 2px;
+  border-top: #FE6A2D;
+  border-right: #FE6A2D;
+  border-bottom: #FE6A2D;
+  padding: 100px 50px 0px 80px; 
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+}
+
+.nossa {
+
+  font-size: 18px;
+  color: #ffffff;
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  background-color: #DB4000;
+  border: solid #DB4000;
+  box-shadow: 5px 5px 10px #8d3601;
+  border-radius: 30px;
+  margin: 50px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nossa:hover {
+  background-color: #D65403;	
+  color: #AAA8A8;	
+  border: solid #D65403;
+}
+/*===================================================================================================*/		
+/*=========================================FORMAS DE PAGAMENTO=======================================*/
+.externo2 {
+  background-color: #DB4000;
+  width: 100%;
+  height: 46%;
+  border-radius: 35px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.circle {
+  background-color: #FE6A2D;
+  width: 30%;
+  height: 50%;
+  border-radius: 100%;
+  margin: 0px 0px 0px 3px;
+
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  color: #ffffff;
+  text-align: left;
+  font-size: 4 00%;
+  padding: 0px 0px 0px 20px;
+
+}
+
+.circle2 {
+  background-color: #FE6A2D;
+  width: 390px;
+  height: 390px;
+  border-radius: 100%; 
+  margin: 0px 0px 105px 413px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 0px 0px 0px 0px;
+}
+/*===================================================================================================*/	
+
+
+
+body {
+  background-color: var(--cor1);
+}
+
+header > h1 {
+  text-align: right;
+  font-size: 2em;
+  font-family: serif;
+  color: var(--cor1);
+  padding: 0px;
+  min-width: 400px;
+}
+
+h2 {
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+
+footer {
+  height: 100%;
+  width: 100%;
+  background-color: var(--cor1);
+  font-size: 18px;
+  font-family: serif;
+  color: #000000;
+  text-align: center;
+  border-top: 1px solid #000000;
+
+}
+
+header {
+  padding: 1px 0px 1px 0px;
+  font-family: serif;
+  width: 100%;
+  margin: auto;
+  background-image: linear-gradient(to right, var(--cor2) 30%, #F69A1F);
+  border: 1px solid var(--cor1);
+  
+  max-width: 1200px;
+}
+
+nav {
+    text-align: center;
+    background-color: var(--cor2);
+    width: 100%;
+    border: 1px solid var(--cor1);
+}
+
+a {
+    margin: 40px;
+    background-color: #db540000; 
+    border: none;
+    color: var(--cor1);
+    padding: 4px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; /*FORÇA NIVEL DE BLOCO VIRAR NIVEL DE LINHA*/
+    font-size: 13px;
+    margin: 4px 2px;
+    transition-duration: 0,4s; /*TEMPO DE TRANSIÇÃO DO HOVER*/
+    cursor: pointer; /*MUDA O CURSOR DO MUSE*/
+}
+
+a:hover {
+    color: rgb(170, 168, 168);					
+}
+
+.botoems {
+    background-color: var(--cor2);
+    margin: auto;
+  }
+
+
+main {
+    text-align: center;
+    border: 1px solid var(--cor1);
+    margin: auto;
+    background-color: var(--cor1);
+
+}
+
+article {
+    text-align: center;
+    margin: auto;
+}
+
