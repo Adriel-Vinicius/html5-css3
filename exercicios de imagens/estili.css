@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+
+body {
+
+    background-image: url("wallpaper003.jpg");
+}
+
+
+.back1 {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+
+
+div#bb1 {
+
+    background-color: aquamarine;
+}
+
+div#bb2 {
+
+    background-image: linear-gradient(to top, orange, gray);
+}
+
+div#bb3 {
+
+    background-image: url("wallpaper003.jpg");
+}
