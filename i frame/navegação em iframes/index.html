@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navegaçao no iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+
+            border: 1px solid black;
+            width: 300px;
+            height: 300px; 
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+    <h1>Faça sua escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptates animi suscipit quaerat expedita placeat perspiciatis accusamus facere debitis. Assumenda quam suscipit aspernatur vel numquam voluptate, modi quaerat accusamus id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minima possimus impedit enim, necessitatibus quidem ducimus dignissimos, dicta sapiente molestias, perspiciatis ipsum quia blanditiis eum aspernatur sint. Amet, alias ipsum!</p>
+
+    <ul>
+        <li><a href="pag1.html" target="frame">pagina 1</a>
+        <li><a href="pag2.html" target="frame">pagina 2</a>
+        <li><a href="pag3.html" target="frame">pagina 3</a> 
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium non repudiandae, saepe distinctio, repellendus inventore ullam ipsum optio dolor cupiditate esse tenetur quas. Quo, delectus voluptas! Excepturi ipsum modi quidem.</p>
+
+    <iframe  name="frame" frameborder="0" srcdoc="<h1>escolha uma opção acima</h1>"scolling="no"> <!--scolling = rolagem--->>
+        (seu navegador não compativel com isso) <!--texto caso nn seja compativel o iframe, tb pode ser colocado um link opicional--->
+
+        <!---SRCDOC = cria um documento html dentro do iframe, conteudo esttico inicial do site-->>
+
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero voluptates nam architecto tenetur perferendis quam voluptatibus excepturi quia mollitia voluptatem expedita, aperiam cum numquam deserunt illo amet dolorem sint harum?</p>
+    
+</body>
+</html>
