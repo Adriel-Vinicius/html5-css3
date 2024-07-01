@@ -7,6 +7,8 @@
 </head>
 <body>
 
+    <h2>Nome e sobrenome</h2>
+
     <form action="cadastro.php" method="post" autocomplete="off">
         <p><label for="inome">nome:</label> 
             <input type="text" name="nome" id="inome" value="" ></p>
@@ -15,6 +17,8 @@
         <input type="submit" >
     </form>
 <hr>
+
+<h2>Nome e ssenha</h2>
 
     <form action="cadastro.php" method="post" autocomplete="on">
 
@@ -30,5 +34,37 @@
         <input type="reset" value="Limpar">
 
     </form>
+
+<hr>
+
+    <h2>Number, Time, Data, Mouth</h2>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required autocomplete="name" maxlength="30" minlength="3" placeholder="seu nome">
+        </p>
+        <p>
+            <label for="imes">Perido letivo</label>
+            <input type="month" name="mem" id="imes">
+        </p>
+        <p>
+            <label for="imedia">Media</label>
+            <input type="number" id="imedia" required placeholder="sua media" min="0" max="10" step="0.5">
+
+           
+        </p>
+        <p>
+            <label for="ihora">Horas</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+        <input type="submit">
+        <input type="reset">
+        </p>
+    </form>
+
+<hr>
 </body>
 </html>
