@@ -66,5 +66,171 @@
     </form>
 
 <hr>
+
+<h2>Email e Tel</h2>
+
+<fieldset>
+    <legend>Email e Tel</legend>
+
+<form action="cadastro.php" method="post" autocomplete="on">
+
+    <p>
+        <label for="iemail">Email:</label>
+        <input type="email" nome="email" id="iemail" autocomplete="email"  required>
+    </p>
+    <p>
+        <label for="itel">Telefone:</label>
+        <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^/d{4,5}/d{4,5}$" placeholder="xxxx-xxxx">
+        <!--"^/(/d{2}/){4,5}/d{4,5}$"-->
+    </p>
+    <!--Aprofundar sobre expressoes regulares  "^/(/d{2}/){4,5}/d{4,5}$"   (xx)xxxx-xxxx-->
+    <p>
+        <input type="submit">
+        <input type="reset">
+    </p>
+
+
+</form>
+
+</fieldset>
+
+<hr>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <form action="cadastro.php" method="post" autocomplete="on">
+    <h2>Cheakylist e Radio</h2>
+    <fieldset>
+      <legend>Esportes</legend>
+    <p>
+      <input name="esportes" id="ifutebol" type="checkbox" > <label for="ifutebol">Futebol</label>  <br>
+      <input name="esportes" id="ivolei" type="checkbox" > <label for="ivolei">Volei</label> <br>
+      <input name="esportes" id="ibasket" type="checkbox" > <label for="ibasket">Basket</label> <br>
+      <input name="esportes" id="ibaseboll" type="checkbox" > <label for="ibaseboll">baseboll</label> <br>
+    </p>
+   
+    </fieldset>
+    <fieldset>
+      <legend>Sexo</legend>
+
+      <p>
+        <input type="radio" id="masc" name="sexo" checked> 
+        <label for="masc" name="sexo">Masculino</label> <br>
+        <input type="radio" id="fem" name="sexo">
+        <label for="fem" name="sexo"">Feminino </label>
+        
+      </p>
+
+
+
+
+
+      
+    </fieldset>
+    <p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+    </p>  
+  </form>
+<hr>
+
+  <form>
+    <h2>Cores, Arquivos e Contagem</h2>
+    <fieldset>
+      <legend>Escolha a cor</legend>
+      <p>
+        <label for="icor" name="cor">Escolha: </label>
+        <input type="color" name="cor" id="icor">
+      </p> 
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Escolha um arquivo</legend>
+      <p>
+        <label for="arq" name="arq">Escolha: </label>
+        <input type="file" name="arq" id="arq">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Escolha uma nota de Satisfação</legend>
+      <p>
+        <label for="irange" name="range">Escolha: </label>
+        <input type="range" name="range" id="irange" value="50%" min="1" max="10">
+      </p>
+    </fieldset>
+  </form>
+
+  <Hr>
+
+  <form>
+    <h2>Select, datalist e textarea</h2>
+    <fieldset>
+      <legend>Selecione seu estado</legend>
+        <p>
+          <label for="estado">Estados: </label>
+          <select name="estado" id="estado" required>
+            
+            <option selected>-------</option>
+            <optgroup label="Região Sudeste">
+              <option value="MG">Minas Gerais</option>
+              <option value="SP">São Paulo</option>
+              <option value="RJ">Rio De Janeiro</option>
+            </optgroup>
+              
+            <optgroup label="Região nordeste">
+              <option value="MG">Maranhão</option>
+              <option value="SP">Paraíba</option>
+              <option value="RJ">Pernambuco</option>
+            </optgroup>
+
+            
+          </select>
+        </p>
+      
+    </fieldset>
+
+    <fieldset>
+        <legend>Data list</legend>
+    <p>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="prof" id="iprof" list="listprof">
+            
+        
+        <datalist id="listprof">
+            <option>Desenvolvedor</option>
+            <option>Cartazista</option>
+            <option>Repositor</option>
+            <option>Cozinheiro</option>
+        </datalist>
+    </p>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>textarea</legend>
+        <label for="text">Deixe uma sugestão: (max 3000 caracteres)</label> <br>
+        <textarea name="text" id="text" rows="10" cols="40" maxlength="3000"></textarea>
+    </fieldset>
+  </form>
+
+
+  
+</body>
+
+</html>
 </body>
 </html>
