@@ -225,6 +225,50 @@
         <label for="text">Deixe uma sugestão: (max 3000 caracteres)</label> <br>
         <textarea name="text" id="text" rows="10" cols="40" maxlength="3000"></textarea>
     </fieldset>
+
+    <hr>
+    <h2>Elemento Output</h2>
+
+    <fieldset>
+      <legend>Elemento Output</legend>
+      <p>
+        <label for="soma1">Soma</label>
+        <input type="number" name="somq1" id="soma1" required oninput="result.innerHTML = Number(soma1.value) + Number(soma2.value)">
+      </p>
+
+      <p>
+        <label for="soma2">Soma</label>
+        <input type="number" name="soma2" id="soma2" required oninput="result.innerHTML = Number(soma1.value) + Number(soma2.value)">
+      </p>
+
+      <p>
+        <label for="result">Resultado</label>
+        <output name="result" id="result">0</output>   
+      </p>
+
+      <p>
+        <label for="range">Contagem</label>
+        <input type="range" name="range" id="range" oninput="cont.innerHTML = Number(range.value)" min="0" max="10">
+        <output name="cont" id="cont">5</output>
+      </p>
+
+      <p>
+        <input type="submit">
+        <input type="reset">
+      </p>
+      
+    </fieldset>
+
+
+
+
+
+
+
+
+
+
+
   </form>
 
 

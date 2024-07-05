@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Media query</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  
+  <main>
+      <section id="formularios">
+       <form action="" method="post" autocomplete="off">
+         <fieldset>
+           <legend>Modelo de cartaz</legend>
+  
+          <p>
+            <label for="itext">Campanha:</label>  
+            <input type="text" name="texto" id="itext" oninput="iresult.innerHTML = String(itext.value)" size="10" maxlength="15" placeholder="Oferta"> <br>
+          </p>  
+  
+          
+         </fieldset>
+       </form>
+<!--===============================================================-->
+        <fieldset>
+          <legend>Descrição comercial</legend>
+        <p>
+          <label for="iprincipal">Descrição principal:</label> 
+          <input type="text" name="principal" id="iprincipal" maxlength="16" placeholder="Produto" oninput="iprincipalresult.innerHTML = String(iprincipal.value)"> <br>
+        </p>  
+<!--================================================================-->
+        <p>  
+          <label for="imarca">Marca:</label> 
+            <input type="text" name="marca" id="imarca" maxlength="16" placeholder="marca" oninput="marcaresult.innerHTML = String(imarca.value)">
+        </p>  
+<!--================================================================-->
+        <p>
+          <label for="idescricaosec">Descrição Secundaria:</label> 
+          <input type="text" name="sec" id="idescricaosec" maxlength="16" placeholder="descrição" oninput="isecresult.innerHTML = String(idescricaosec.value)"> <br>
+        </p> 
+          
+        </fieldset>
+
+        
+  </section>  
+
+  
+      
+  
+
+<!--================================================================================-->
+<!--================================================================================-->
+<!--================================================================================-->
+  <section class="preview">
+    <h1>Pré-visualização</h1>
+    <section class="center">
+      <section id="cartaz">
+        
+          <div class="campanha">
+            <output id="iresult">oferta</output>
+           </div>
+
+          <div class="descricaoprincipal">
+            <output id="iprincipalresult">Descrição principal</output>   
+          </div>
+
+          <div class="marca">
+            <output id="marcaresult">Marca</output>
+          </div>
+
+          <div class="descricaosec"">
+            <output id="secresult">Marca</output>
+          </div>
+      </section>
+    </section>  
+<!--================================================================================-->
+
+     
+    
+  </section>
+   
+    
+  </main>
+</body>
+
+</html>
