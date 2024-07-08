@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/*orintação pra celular em pé  (portrait)*/
+
+
+
+
+body {
+    background-color: rgb(17, 0, 255);
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: left bottom;
+}

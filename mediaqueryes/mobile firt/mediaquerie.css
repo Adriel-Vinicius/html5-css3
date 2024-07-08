@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/*todas as demais medias*/ 
+
+
+/*Typycal Device Break points
+=============================
+Pequenas telas: ate 600px
+Celular: de 600px ate 768px
+Tablet: 768px ate 992px
+Desktop: 992px ate 1200px
+Grandes telas: acima de 1200px
+*/
+
+
+@media screen {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {/*Tablet*/
+    body {
+        background-image: url(back-tablet.jpg);
+    }
+
+    img#pc {display: none;}
+    img#phone {display: none;}
+    img#print {display: none;}
+    img#tablet {display: block;}
+    img#tv {display: none;}
+}
+
+
+
+@media screen and (min-width: 992px) and (max-width:1200px) {/*TDesktop*/
+    body {
+        background-image: url(icon-pc.png);
+    }
+
+    img#pc {display: black;}
+    img#phone {display: none;}
+    img#print {display: none;}
+    img#tablet {display: none;}
+    img#tv {display: none;}
+}
+
+
+
+@media screen and (min-width: 1200px) {/*Grandes telas*/
+    body {
+        background-image: url(back-tv.jpg);
+    }
+
+    img#pc {display: none;}
+    img#phone {display:none;}
+    img#print {display: none;}
+    img#tablet {display: none;}
+    img#tv {display: block;}
+}
+
