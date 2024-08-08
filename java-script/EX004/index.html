@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos dom</title>
+    <style>
+        p {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Passaporte!</h1>
+    <p>Qual a sua nacionalidade? </p>
+    <input type="text" id="origem" size="10"> <br>
+    <p>Qual a sua idade? </p>
+    <input type="number" id="idade" size="2"> <input type="button" id="enviar" value="Enviar" onclick="testar()"><br>
+    <div id="res"></div>
+
+   
+    
+    
+
+
+
+
+    <script>
+        var origem = window.document.getElementById('origem')
+        var idade = window.document.getElementById('idade')
+        
+        function testar() {
+            nacionalidade = String(origem.value)
+            idade = Number(idade.value)
+
+            if (idade >= 18) {
+                res.innerHTML += 'Você é maior de idade e <br>'
+            } else {
+                res.innerHTML += 'Você é menor de idade e <br>'
+            }
+            
+
+            if (nacionalidade != 'brasil') {
+                res.innerHTML += 'Você é estrangeiro'
+            } else {
+                res.innerHTML += 'Você é Brasileiro'
+            }
+        }
+
+    </script>
+</body>
+</html>

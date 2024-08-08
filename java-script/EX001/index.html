@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 1</title>
+</head>
+<body>
+    <script>
+        /*
+       var n1 = Number.parseInt(window.prompt('Digite um numero'));
+       var n2 = Number.parseInt(window.prompt('Digite outro numero'));
+       var n3 = n1 + n2;
+       window.alert('O resultado é ' + n3)
+       */
+    /*=================================*/
+       /*
+
+       var nome = window.prompt ('Digite seu nome: ')
+       document.write(`Bem vindo, <strong>${nome}</strong> seu nome tem ${nome.length} letras <br> Em maiusculas fica ${nome.toUpperCase()}`)
+
+       */
+    /*=================================*/
+       /*Formatando numeros*/
+       
+       var valor = Number.parseInt(window.prompt('Digite um numero: '))
+       valor = valor.toFixed(2).replace('.', ',')
+       document.write(`${valor.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`)
+
+    /*=================================*/
+
+
+
+    </script>
+</body>
+</html>

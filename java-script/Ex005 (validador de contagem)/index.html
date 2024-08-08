@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validador de contagem</title>
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(111, 31, 216);
+        }
+
+        header > h1 {
+            text-align: center;
+            font-weight: bolder;
+            padding: 10px;
+            margin: 20px;
+            color: #ffffff;
+        }
+
+        section {
+            width: 500px;
+            height: 250px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+        section > form > p {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        div {
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        form > input {
+
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin: 20px;
+            font-weight: bolder;
+            color: #ffffff;
+        }
+
+        .hidden {
+            height: 90px;
+            overflow: scroll;
+            border: 1px solid rgb(111, 31, 216);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar!</h1>
+    </header>
+    <section>
+        <form action="" method="get" autocomplete="off">
+            <p>            
+            <label for="inicio">Inicio: </label>
+            <input type="number" id="inicio" placeholder="Escolha o numero" max="20" required> <br>
+            </p>
+            <p>
+            <label for="final">Final: </label> 
+            <input type="number" id="final" placeholder="Escolha o final" max="20" required> <br>
+            </p>
+            <p>
+            <label for="passo">Passo: </label>
+            <input type="number" id="passos" placeholder=""Passos max="10" required> <br>
+            </p>
+            <p>
+            <input type="button" value="Calcular" onclick="iniciar()">
+            </p>
+            <div class="hidden">
+                <p>
+                <div id="result">Seu resultado aparessera aqui!</div>
+                </p>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>@AdrielVinicius</p>
+    </footer>
+
+    <script>
+        var vinicio = document.getElementById('inicio')
+        var vfim = document.getElementById('final')
+        var vpassos = document.getElementById('passos')
+        var vresultado = document.getElementById('result')
+        
+
+        function iniciar() {
+
+            var inicio = Number(vinicio.value)
+            var fim = Number(vfim.value)
+            var passos = Number(vpassos.value)
+
+            vresultado.innerHTML = `Agora é ${inicio}---->`
+
+            if (inicio >= fim) {
+                window.alert("falha no envio do formulario, tente novamente")
+                vresultado.innerHTML = `erro`
+            }
+
+            while (inicio < fim) {
+                inicio +=  + passos 
+                vresultado.innerHTML += `Agora é ${inicio}---->`
+            }
+        }
+    </script>
+    
+</body>
+</html>
