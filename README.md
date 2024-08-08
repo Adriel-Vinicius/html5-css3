@@ -3,7 +3,7 @@
 
  <a href="https://adriel-vinicius.github.io/html5-css3/supermercado/index.html">Site de supermercado em html e css</a>
 
-<!--
+
 </html>
 
 <!DOCTYPE html>
@@ -197,4 +197,4 @@
   </script>
 
 </body>
-</html>-->
+</html>
